@@ -11,24 +11,19 @@ body {
 
 }
 
-.nav {
+.nav, h1 {
     width: 100%;
     background-color: #ffe8d6;
     overflow: auto;
     float: left;
     padding: 5px;
     font-size: 17px;
-    text-align: center;
+    text-align: left;
 }
 
 button {
     background-color:#f0ead2;
     margin-left: 2%;
     margin-right: 1%;
-}
-
-h1 {
-    font-family: barlow;
-    font-size: 4em;
 }
 
