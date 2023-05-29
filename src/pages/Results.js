@@ -1,9 +1,10 @@
+import React from 'react';
 import Report from '../components/Report'
 
 const Results = (props) => {
     return (
         <div>
-            <h1>This is the Results Page</h1>
+            <h2>This is the Results Page</h2>
             <Report />
         </div>
     )

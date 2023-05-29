@@ -1,6 +1,6 @@
 @font-face {
     font-family: barlow;
-    src: url(https://coolors.co/font/barlow);
+    src: url('https://coolors.co/font/barlow');
     font-weight: bold;
 }
 
@@ -8,22 +8,31 @@ body {
     background-color: #dde5b6;
     color: #75893F;
     text-align: center;
-
+    margin-top: 1em;
+    font-family: barlow, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.nav, h1 {
+.nav {
     width: 100%;
     background-color: #ffe8d6;
-    overflow: auto;
-    float: left;
     padding: 5px;
-    font-size: 17px;
-    text-align: left;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 button {
     background-color:#f0ead2;
-    margin-left: 2%;
-    margin-right: 1%;
+    margin-left: 3em;
+    margin-bottom: 1em;
+    font-size: 20px;
+
+}
+
+h1 {
+    Background-color: #f0ead2;
+    font-family: barlow;
+    font-size: 50px;
 }
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import SignIn from '../components/SignIn'
 import UserAuth from '../components/UserAuth'
 import NavBar from '../components/NavBar'
@@ -5,10 +6,9 @@ import NavBar from '../components/NavBar'
 const Home = (props) => {
     return (
         <div>
-            <h1>This is the Home Page</h1>
+            <h2>Let's Work Together to Make Your Plan</h2>
             <SignIn />
             <UserAuth />
-            <NavBar />
         </div>
     )
 }

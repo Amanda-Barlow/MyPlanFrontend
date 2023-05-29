@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const UserAuth = (props) => {
     return(
         <div className = 'userAuth'>
-            <h1>UserAuth</h1>
+            <h2>UserAuth</h2>
         </div>
     );
 };
