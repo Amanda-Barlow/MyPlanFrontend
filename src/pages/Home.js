@@ -1,6 +1,5 @@
 import React from 'react';
-import SignIn from '../components/SignIn'
-import UserAuth from '../components/UserAuth'
+import SignIn from '../components/Auth/SignIn'
 import NavBar from '../components/NavBar'
 
 const Home = (props) => {
@@ -8,7 +7,6 @@ const Home = (props) => {
         <div>
             <h2>Let's Work Together to Make Your Plan</h2>
             <SignIn />
-            <UserAuth />
         </div>
     )
 }
