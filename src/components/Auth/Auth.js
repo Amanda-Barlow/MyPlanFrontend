@@ -13,4 +13,4 @@ const UserAuth = (props) => {
     );
 };
 
-export default Auth
+export default AUTH;

@@ -17,19 +17,19 @@ const SignIn = (props) => {
                 <h2>Sign In To Your Account</h2>
                 
                 <div className={SignIn.inputContainer}>
-                    <label>FIRST NAME</label>
-                    <input placeholder='Enter Your First Name' type='text'/>
+                    <label>First Name:  </label>
+                    <input placeholder='Enter Your First Name' type='string'/>
                     <br></br>
-                    <label>LAST NAME</label>
-                    <input placeholder='Enter Your Last Name' type='text'/>
+                    <label>Last Name:  </label>
+                    <input placeholder='Enter Your Last Name' type='string'/>
                     <br></br>
-                    <label>EMAIL</label>
-                    <input placeholder='Enter Your Email Address' type='text'/>
+                    <label>Email: </label>
+                    <input placeholder='Enter Your Email Address' type='string'/>
                     <br></br>
-                    <label>PASSWORD</label>
-                    <input placeholder='Enter Your Password' type='text'/>
+                    <label>Password: </label>
+                    <input placeholder='Enter Your Password' type='string'/>
                     <br></br>
-                    <button>SUBMIT</button> 
+                    <button>Submit</button> 
                 </div>
             </div>
     );

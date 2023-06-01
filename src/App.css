@@ -6,9 +6,16 @@
 
 body {
     background-color: #dde5b6;
+    background-image: url('../public/assets/dmytro-tolokonov-Jq3WI9IQgEs-unsplash.jpg');
+    overflow: scroll;
+    background-size: inherit;
+    background-position: y;
+    resize: both;
+    z-index: 6;
     color: #75893F;
-    text-align: center;
+    text-align: left;
     margin-top: 1em;
+    margin-left: 2em;
     font-family: barlow, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -27,6 +34,7 @@ button {
     margin-left: 3em;
     margin-bottom: 1em;
     font-size: 20px;
+    padding: 2px;
 
 }
 
@@ -36,3 +44,6 @@ h1 {
     font-size: 50px;
 }
 
+.inputContainer {
+    align-items: left;
+}
