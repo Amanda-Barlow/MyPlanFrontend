@@ -7,8 +7,8 @@ import SkillsCheck from '../components/SkillsCheck'
 const FormsPage = (props) => {
     return (
         <div>
-            <Assessment />   
             <FillableForm />
+            <Assessment />  
             <SafetyPlan />
             <SkillsCheck />     
         </div>

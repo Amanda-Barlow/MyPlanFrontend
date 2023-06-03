@@ -20,13 +20,12 @@ body {
 }
 
 .nav {
-    width: 100%;
+    width: 95%;
     background-color: #ffe8d6;
     padding: 5px;
     font-size: 25px;
     text-align: center;
-    margin-top: 1em;
-    margin-bottom: 1em;
+
 }
 
 button {
@@ -51,4 +50,33 @@ h1 {
 .aboutMe {
     background-color: #f0ead2;
     font-family:'Times New Roman', Times, serif;
+    margin-right: 1.5em;   
+}
+
+.fillableForm {
+    background-color: #f0ead2;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.Assessment {
+    background-color: #f0ead2;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.safetyPlan {
+    background-color: #f0ead2;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.skillsCheck {
+    background-color: #f0ead2;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
 }
