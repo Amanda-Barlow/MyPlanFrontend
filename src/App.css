@@ -47,3 +47,8 @@ h1 {
 .inputContainer {
     align-items: left;
 }
+
+.aboutMe {
+    background-color: #f0ead2;
+    font-family:'Times New Roman', Times, serif;
+}
