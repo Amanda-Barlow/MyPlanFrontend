@@ -8,7 +8,7 @@ const PHQ9 = (props) => {
             <h4>(Rating Slider = 0-Not At All, 1-Several Days, 2-More than half the days, 3-Nearly every day)</h4>
                 <div className = "Slider">
                     <input type="range" id="PHQ1" name="PHQ1" min="0" max="3"/>
-                    <label for=". Little interest or pleasure in doing things :">. Little interest or pleasure in doing things : </label>
+                    <label for=" Little interest or pleasure in doing things :">. Little interest or pleasure in doing things : </label>
                 </div>
                 <br></br>
                 <div className = "Slider">
