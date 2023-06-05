@@ -12,7 +12,7 @@ const FormsPage = (props) => {
             <PHQ9 />  
             <GAD7 /> 
             <SafetyPlan />
-            <input type="submit" value="submit" />
+            <input type="Submit" value="Submit" />
         </div>
   
     )
