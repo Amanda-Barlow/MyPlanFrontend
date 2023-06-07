@@ -59,6 +59,11 @@ const GAD7 = (props) => {
     );
 };
 
+const GAD7Score = (props) => {
+    return 
+}
+
+
 export default GAD7
 
                    

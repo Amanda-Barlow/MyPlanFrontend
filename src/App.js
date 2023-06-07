@@ -12,7 +12,10 @@ const App = () => {
     const [forms, setForms] = useState([]);
     const [form, setForm] = useState(null);
     console.log(URL)
+    console.log(form)
+    console.log(forms)
 
+    
     const fetchForms = async () => {
         try{
             const response = await fetch(URL);

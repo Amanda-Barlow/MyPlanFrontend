@@ -17,11 +17,8 @@ const SignIn = (props) => {
                 <h2>Sign In To Your Account</h2>
                 
                 <div className={SignIn.inputContainer}>
-                    <label>First Name:  </label>
-                    <input placeholder='Enter Your First Name' type='string'/>
-                    <br></br>
-                    <label>Last Name:  </label>
-                    <input placeholder='Enter Your Last Name' type='string'/>
+                    <label>Name:  </label>
+                    <input placeholder='Enter Your Name' type='string'/>
                     <br></br>
                     <label>Email: </label>
                     <input placeholder='Enter Your Email Address' type='string'/>
