@@ -1,16 +1,5 @@
 import React from 'react';
 
-// import {useGoogleLogin} from '@react-oauth/google';
-// import {useDispatch} from 'react-redux';
-// import {signup, signupGoogle} from '../actions/auth';
-
-const InitState = {
-    firstName: '',
-    lastName: '',
-    email: '',
-    password: '',
-    confirmPassword: '',
-}
 const SignIn = (props) => {
     return(
         <div className = {SignIn.loginContainer}>
@@ -26,7 +15,7 @@ const SignIn = (props) => {
                     <label>Password: </label>
                     <input placeholder='Enter Your Password' type='string'/>
                     <br></br>
-                    <button>Submit</button> 
+                    <input type= "submit" value="Submit" /> 
                 </div>
             </div>
     );
