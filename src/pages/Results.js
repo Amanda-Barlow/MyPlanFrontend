@@ -1,7 +1,7 @@
 import React from 'react';
-import {useState, useEffect} from "react"
-import {Navigate, useParams} from "react-router-dom"
-import {useNavigate} from "react-router-dom"
+// import {useState, useEffect} from "react"
+// import {Navigate, useParams} from "react-router-dom"
+// import {useNavigate} from "react-router-dom"
 import GAD7 from '../components/GAD7'
 import PHQ9 from '../components/PHQ9'
 import FillableForm from '../components/FillableForm'
@@ -9,12 +9,11 @@ import SafetyPlan from '../components/SafetyPlan'
 
 
     //function to return loaded JSX
-const Results = ({ FillableForm }) => { 
-
+const Results = ({}) => { 
         return(
             <div className = 'report'>
-                <h1>Here are your reports</h1>
-                <h2>Welcome (form.name)</h2>
+                <h1>Here are your results</h1>
+                <h2>Welcome {FillableForm.name}</h2>
                 <h3>You said you want to work on {FillableForm.goal}</h3>
                 <h3>The skills you want to learn are: {FillableForm.skills}</h3>
                 <h3>You said you would like to meet {FillableForm.frequency}</h3>
