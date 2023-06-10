@@ -6,15 +6,17 @@ import SafetyPlan from '../components/SafetyPlan'
 
 
 const FormsPage = (props) => {
+
     return (
-        <div>
+        <form>
+            <form id='myform' action='action.php' method='POST' target='formresponse'></form>
             <FillableForm />
             <PHQ9 />  
             <GAD7 /> 
             <SafetyPlan />
-            <input type="Submit" value="Submit" />
-        </div>
-  
+            <input type='submit' value='Submit' onclick='return FormsPage();'/>
+        </form>
+
     )
 }
 

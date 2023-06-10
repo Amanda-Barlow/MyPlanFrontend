@@ -1,4 +1,7 @@
 import React from 'react';
+import {useState, useEffect} from "react"
+import {Navigate, useParams} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 import GAD7 from '../components/GAD7'
 import PHQ9 from '../components/PHQ9'
 import FillableForm from '../components/FillableForm'
@@ -6,8 +9,8 @@ import SafetyPlan from '../components/SafetyPlan'
 
 
     //function to return loaded JSX
-const Results = ({ form }) => {
-    const loaded = () => {
+const Results = ({ FillableForm }) => { 
+
         return(
             <div className = 'report'>
                 <h1>Here are your reports</h1>
@@ -26,6 +29,6 @@ const Results = ({ form }) => {
             </div>
         );
     }
-}
+
 
 export default Results;
