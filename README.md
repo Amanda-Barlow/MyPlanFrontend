@@ -1,5 +1,7 @@
 
 # Your Treatment, Your Plan
+https://git.heroku.com/my-plan-backend.git
+https://git.heroku.com/my-plan-frontend.git
 
 A full stack application developed using the MERN (Mongoose, Express, React, and Node.js) stack. Your Treatment, Your Plan adhered to the MVC (Models, Views and Controllers) file structure on the backend.  Developers applied full CRUD to the form page. The site pulls from the data created by the user and saves this information to MongoDB Atlas. The application is deployed using Heroku.
 
