@@ -1,7 +1,6 @@
 
 # Your Treatment, Your Plan
 
-
 A full stack application developed using the MERN (Mongoose, Express, React, and Node.js) stack. Your Treatment, Your Plan adhered to the MVC (Models, Views and Controllers) file structure on the backend.  Developers applied full CRUD to the form page. The site pulls from the data created by the user and saves this information to MongoDB Atlas. The application is deployed using Heroku.
 
 This is an application designed to improve the treatment planning process for clients and professionals while still meeting requirements of insurance providers. This application allows client users to input their own information and then allows the therapist to review the information use this information along with clinical revisions to create a truely individualized treatment plan for every user. This also increases ownership of treatment for the client which is shown to improve outcomes. 
