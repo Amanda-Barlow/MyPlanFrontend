@@ -2,8 +2,8 @@ import React from 'react';
 // import {useState, useEffect} from "react"
 // import {Navigate, useParams} from "react-router-dom"
 // import {useNavigate} from "react-router-dom"
-import GAD7 from '../components/GAD7'
-import PHQ9 from '../components/PHQ9'
+// import GAD7 from '../components/GAD7'
+// import PHQ9 from '../components/PHQ9'
 import FillableForm from '../components/FillableForm'
 import SafetyPlan from '../components/SafetyPlan'
 
