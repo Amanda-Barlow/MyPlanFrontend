@@ -1,5 +1,5 @@
 import React from 'react';
-import SignIn from '../components/Auth/SignIn'
+import SignIn from '../components/SignIn'
 
 
 const Home = (props) => {

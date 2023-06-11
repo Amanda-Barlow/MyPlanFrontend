@@ -5,15 +5,12 @@ const SignIn = (props) => {
         <div className = {SignIn.loginContainer}>
                 <h2>Sign In To Your Account</h2>
                 
-                <div className={SignIn.inputContainer}>
-                    <label>Name:  </label>
-                    <input placeholder='Enter Your Name' type='string'/>
-                    <br></br>
+                <div className={SignIn.loginContainer}>
                     <label>Email: </label>
-                    <input placeholder='Enter Your Email Address' type='string'/>
+                    <input placeholder='Enter Your Email Address' type='text'/>
                     <br></br>
                     <label>Password: </label>
-                    <input placeholder='Enter Your Password' type='string'/>
+                    <input placeholder='Enter Your Password' type='text'/>
                     <br></br>
                     <input type= "submit" value="Submit" /> 
                 </div>

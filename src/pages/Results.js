@@ -17,8 +17,8 @@ const Results = ({}) => {
                 <h3>You said you want to work on {FillableForm.goal}</h3>
                 <h3>The skills you want to learn are: {FillableForm.skills}</h3>
                 <h3>You said you would like to meet {FillableForm.frequency}</h3>
-                <h3>Your PHQ9 score is: {PHQ9.PHQ9Score}</h3>
-                <h3>Your GAD7 score is: {GAD7.GAD7Score}</h3>
+                {/* <h3>Your PHQ9 score is: {PHQ9.PHQ9Score}</h3>
+                <h3>Your GAD7 score is: {GAD7.GAD7Score}</h3> */}
                 <h2>Safety Plan</h2>
                 <h2>Nationwide Crisis Number 988</h2>
                 <h3>You said you can reach out to {SafetyPlan.crisis}</h3>
