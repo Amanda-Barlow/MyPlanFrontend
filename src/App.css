@@ -1,38 +1,96 @@
-.App {
+@font-face {
+  font-family: barlow;
+  src: url('https://coolors.co/font/barlow');
+  font-weight: bold;
+}
+
+body {
+  background-color: #dde5b6;
+  background-image: url('../public/assets/dmytro-tolokonov-Jq3WI9IQgEs-unsplash.jpg');
+  overflow: scroll;
+  background-size: inherit;
+  background-position: y;
+  resize: both;
+  z-index: 6;
+  color: #75893F;
+  text-align: left;
+  margin-top: 1em;
+  margin-left: 2em;
+  font-family: barlow, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav {
+  width: 95%;
+  background-color: #ffe8d6;
+  padding: 5px;
+  font-size: 25px;
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  background-color:#f0ead2;
+  margin-left: 3em;
+  margin-bottom: 1em;
+  font-size: 20px;
+  padding: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  background-color: #f0ead2;
+  font-family: barlow;
+  font-size: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputContainer {
+  align-items: left;
 }
 
-.App-link {
-  color: #61dafb;
+.aboutMe {
+  background-color: #f0ead2;
+  font-family:'Times New Roman', Times, serif;
+  margin-right: 1.5em;   
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fillableForm {
+  background-color: #f0ead2;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.Assessment {
+  background-color: #f0ead2;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.safetyPlan {
+  background-color: #f0ead2;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.skillsCheck {
+  background-color: #f0ead2;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+h4, h3 {
+  font-size: 16px;
+  background-color: #f0ead2;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+.Slider {
+  font-size: 16px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
 }
