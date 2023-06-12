@@ -11,10 +11,7 @@ const App = () => {
     const URL = process.env.REACT_APP_BASE_URL
     const [forms, setForms] = useState([]);
     const [form, setForm] = useState(null);
-    console.log(URL)
-    console.log(form)
-    console.log(forms)
-
+    console.log(URL, form, forms, setForm)
     
     const fetchForms = async () => {
         try{
@@ -25,7 +22,6 @@ const App = () => {
             console.error(error);
         }
     };
-
 
 useEffect(() => {
     fetchForms();
