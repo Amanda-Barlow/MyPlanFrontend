@@ -82,5 +82,3 @@ const PHQ9Score = (props) => {
 }
 
 export default PHQ9
-
-export default PHQ9
