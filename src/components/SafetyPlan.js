@@ -16,3 +16,5 @@ const SafetyPlan = (props) => {
 };
 
 export default SafetyPlan
+
+export default SafetyPlan
