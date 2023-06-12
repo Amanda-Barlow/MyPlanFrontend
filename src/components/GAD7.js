@@ -41,8 +41,8 @@ const GAD7 = (props) => {
                     <label for="Feeling afraid as is something awful might happen">Feeling afraid as if something awful might happen:</label>
                 </div>
                 <br></br>
-                <br></br>
-                <div>
+
+                <div className = "Slider">
                     <h3>If you checked off any problems, how difficult have these made it for you to do your work, take care of things at home, or get along with other people?</h3>
                     <input type="checkbox" id="difficulty" name="difficulty"/>
                     <label for="not">Not difficult at all</label><br></br>
@@ -54,14 +54,17 @@ const GAD7 = (props) => {
                         <label for="extreme">Extremely difficult</label><br></br>
                 </div>
                 <br></br>
-                <br></br>
         </div>
     );
 };
 
-const GAD7Score = (props) => {
-    return 
-}
+// const slider = document.getElementById('Slider');
+// const GAD7Score = (props) => {
+//     slider.oninput = function() {
+//         const value = this.value
+//     }
+//     return 
+// }
 
 
 export default GAD7
