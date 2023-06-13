@@ -1,23 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Home from './pages/Home';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router} from 'react-router-dom';
-import { AuthContextProvider } from './context/authContext';
-import { PostContextProvider } from './context/postsContext';
+import {BrowserRouter, BrowserRouter as Router} from 'react-router-dom';
+import { AuthProvider } from 'react-auth-kit'
+
 
 <Router></Router>
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <React.StrictMode>
-        <AuthContextProvider>
-            <PostContextProvider>
-                <App />
-            </PostContextProvider >
-        </AuthContextProvider >
-    </React.StrictMode>
+    <AuthProvider>
+    <BrowserRouter>
+                <Home />
+    </BrowserRouter>
+    </AuthProvider >
 );
 
 reportWebVitals();

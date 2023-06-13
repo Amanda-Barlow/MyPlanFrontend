@@ -1,44 +1,50 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import './App.css';
-import { useState, useEffect } from 'react';
-import NavBar from './components/NavBar'
-import About from './pages/About'
-import FormsPage from './pages/FormsPage'
+
+import NavBar from './components/NavBar';
+import About from './pages/About';
+import FormsPage from './pages/FormsPage';
 import Home from './pages/Home';
-import Results from './pages/Results'
+import Results from './pages/Results';
+import './App.css';
+import { RequireAuth } from 'react-auth-kit';
+
+import { Route, Routes } from "react-router-dom";
+import { useState, useEffect } from 'react';
+
 
 const App = () => {
     const URL = process.env.REACT_APP_BASE_URL
     const [forms, setForms] = useState([]);
     const [form, setForm] = useState(null);
-    console.log(URL, form, forms, setForm)
+    console.log(URL, form, forms, setForm,)
     
     const fetchForms = async () => {
         try{
             const response = await fetch(URL);
             const data = await response.json();
-            setForms(data);
+            setForms(data.data);
         } catch (error) {
-            console.error(error);
+            console.log(error);
         }
     };
 
 useEffect(() => {
-    fetchForms();
+    setForms();
 }, []);
 
     return (
-        <BrowserRouter>
+        
         <div className = 'App'>
-        <NavBar url={URL}/>
-                <Routes>
-                        <Route path='/' element={<Home />} />
+                <NavBar url={URL}/>
+                    <Routes>
+                        <Route path='/' element={<RequireAuth loginPath='/login'>
+                            <Home />
+                            </RequireAuth>} />
                         <Route path='About' element={<About />} />
                         <Route path='FormsPage' element={<FormsPage />} />
                         <Route path='Results' element={<Results />} />
-                </Routes>
-            </div>
-        </BrowserRouter>  
+                    </Routes>
+        </div>
+         
     );
 }
 

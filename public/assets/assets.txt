@@ -2,3 +2,4 @@ Photo by <a href="https://unsplash.com/@dtolokonov?utm_source=unsplash&utm_mediu
 Photo by <a href="https://unsplash.com/@hngstrm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Henry & Co.</a> on <a href="https://unsplash.com/photos/6-stO-K6JaY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
 Info from NIMH on PHQ9 ("Scores less than 5 almost always signified the absence of a depressive disorder; scores of 5 to 9 predominantly represented patients with either no depression or subthreshold (i.e., other) depression; scores of 10 to 14 represented a spectrum of patients; and scores of 15 or greater usually indicated major depression." Retrieved from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1495268/#:~:text=Scores%20less%20than%205%20almost,greater%20usually%20indicated%20major%20depression)
+https://authkit.arkadip.dev/signin/

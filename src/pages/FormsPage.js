@@ -16,7 +16,7 @@ const FormsPage = (props) => {
             <PHQ9 />  
             <GAD7 /> 
             <SafetyPlan />
-            <input type='submit' value='Submit' onclick='return FormsPage();'/>
+            <input type='submit' value='Submit' onClick='return FormsPage();'/>
         </form>
 
     )

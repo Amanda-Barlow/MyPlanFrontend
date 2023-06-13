@@ -9,7 +9,7 @@ import SafetyPlan from '../components/SafetyPlan'
 
 
     //function to return loaded JSX
-const Results = ({}) => { 
+const Results = () => { 
         return(
             <div className = 'report'>
                 <h1>Here are your results</h1>

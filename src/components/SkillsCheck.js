@@ -3,8 +3,7 @@ import React from 'react';
 const SkillsCheck = (props) => {
     return(
 <fieldset>
-
-any<legend for = "skills"><h2>What Skills Do You Want To Learn:</h2></legend>
+<legend for = "skills"><h2>What Skills Do You Want To Learn:</h2></legend>
 <div>
 <input type="checkbox" id="anxiety" name="anxiety" checked />
 <label for="anxiety">Anxiety Management</label>
