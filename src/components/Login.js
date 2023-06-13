@@ -16,7 +16,7 @@ function Login () {
         console.log('Values: ', values, error);
         setError('');
         try{
-            const response = await axios.post(
+            const response = (
                 BASE_URL,
                 values
                 );

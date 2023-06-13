@@ -1,12 +1,14 @@
-import { useState } from 'react'
-import { useAuthContext } from './useAuthContext'
-
+import React, { useState } from 'react';
+// import { useFormik } from 'formik';
+import { useSignUp } from 'react-auth-kit';
+import axios from 'axios'
 
 export const useSignUp= () => { 
   const [error, setError] = useState(null)
   const [isLoading, setIsLoading] = useState(false)
   const { dispatch } = useAuthContext()
-  const BASE_URL = process.env.REACT_APP_BASE_URL;
+  
+  const BASE_URL= ('https://my-plan-backend.herokuapp.com/');
   const SignUp = async (email, password) => {
     setIsLoading(true)
     setError(null)
