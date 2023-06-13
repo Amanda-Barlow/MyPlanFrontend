@@ -1,7 +1,7 @@
 import React from 'react';
 import Login from '../components/Login'
 import SignUp from '../components/SignUp'
-import {useSignOut } from 'react-auth-kit'
+import { useSignOut } from 'react-auth-kit'
 
 const Home = () => {
     const signOut = useSignOut();
