@@ -1,18 +1,19 @@
 import React from 'react';
 
+
 const SignIn = (props) => {
     return(
-        <div className = {SignIn.loginContainer}>
+        <div className = 'SignInDiv'>
                 <h2>Sign In To Your Account</h2>
-                
-                <div className={SignIn.loginContainer}>
+                <div className='SignInDiv'>
                     <label>Email: </label>
-                    <input placeholder='Enter Your Email Address' type='text'/>
+                    <input placeholder='Enter Email Address' type='text'/>
                     <br></br>
                     <label>Password: </label>
-                    <input placeholder='Enter Your Password' type='text'/>
+                    <input placeholder='Enter Password' type='text'/>
                     <br></br>
                     <input type= "submit" value="Submit" /> 
+               <br></br>
                 </div>
             </div>
     );
