@@ -4,7 +4,7 @@ const SkillsCheck = (props) => {
     return(
 <fieldset>
 
-<legend for = "skills"><h1>Choose any skills you want to learn in counseling:</h1></legend>
+any<legend for = "skills"><h2>What Skills Do You Want To Learn:</h2></legend>
 <div>
 <input type="checkbox" id="anxiety" name="anxiety" checked />
 <label for="anxiety">Anxiety Management</label>

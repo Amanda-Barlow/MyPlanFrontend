@@ -115,7 +115,15 @@ fieldset {
   font-weight: bold;
 }
 
-h4, h3 {
+h3 {
+  font-size: 20px;
+  background-color: #f0ead2;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+}
+
+h4 {
   font-size: 16px;
   background-color: #f0ead2;
   font-size: 20px;
