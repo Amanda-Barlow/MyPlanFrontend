@@ -6,14 +6,14 @@ import axios from 'axios'
 function Login () {
     const [error, setError] = useState('');
     const signIn = useSignIn();
-    const BASE_URL= 'https://git.heroku.com/my-plan-backend.git';
+    const BASE_URL= 'https://my-plan-backend.herokuapp.com/';
     const formik = useFormik({
       initialValues:{
         email: '',
         password:''
       },
       onSubmit: async(values) => {
-        console.log('Values: ', values);
+        console.log('Values: ', values, error);
         setError('');
         try{
             const response = await axios.post(

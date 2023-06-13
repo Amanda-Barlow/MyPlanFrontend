@@ -11,7 +11,7 @@ export const useSignUp= () => {
     setIsLoading(true)
     setError(null)
 
-    const response = await axios.post('https://git.heroku.com/my-plan-backend.git/user/SignUp',
+    const response = await axios.post('https://my-plan-backend.herokuapp.com/',
       
       {headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({ email, password }) 
