@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import { useSignIn } from 'react-auth-kit';
-import axios from 'axios'
+// import axios from 'axios'
 
 function Login () {
     const [error, setError] = useState('');
@@ -31,7 +31,7 @@ function Login () {
         } catch (err) {
             if (err && err instanceof Error)
                 setError(err.response?.data.message);
-            console.log('Error: ', error);
+            console.log('Error:', error);
         }
     }
     });

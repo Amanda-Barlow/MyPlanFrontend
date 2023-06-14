@@ -33,23 +33,6 @@ button {
   border-radius: .5rem;
 }
 
-.SignInDiv {
-  max-width: 40%;
-  max-height: 50%;
-  background-color: #f0ead2;
-  border-radius: .5rem;
-  margin: 2em;
-  padding: 1px;
-}
-
-.SignUpDiv {
-  max-width: 80%;
-  max-height: 50%;
-  background-color: #f0ead2;
-  border-radius: .5rem;
-  margin: 2em;
-  padding: 1px;
-}
 
 h1 {
   background-color: #f0ead2;
@@ -132,4 +115,23 @@ h4 {
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
+}
+
+
+.SignInDiv {
+  max-width: 40%;
+  max-height: 50%;
+  background-color: #f0ead2;
+  border-radius: .5rem;
+  margin: 2em;
+  padding: 1px;
+}
+
+.SignUpDiv {
+  max-width: 80%;
+  max-height: 50%;
+  background-color: #f0ead2;
+  border-radius: .5rem;
+  margin: 2em;
+  padding: 1px;
 }
