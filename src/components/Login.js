@@ -6,7 +6,7 @@ import { useSignIn } from 'react-auth-kit';
 function Login () {
     const [error, setError] = useState('');
     const signIn = useSignIn();
-    const BASE_URL= 'https://my-plan-backend.herokuapp.com/';
+    const BASE_URL= "";
     const formik = useFormik({
       initialValues:{
         email: '',

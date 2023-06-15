@@ -19,10 +19,6 @@ const SkillsCheck = (props) => {
             </select>
         </div>)};
 
-const myHandler = async (req, res) => {
-    const { skills } = req.body
-    skills.forEach(skills => console.log(skills))
 
-}
 
 export default SkillsCheck

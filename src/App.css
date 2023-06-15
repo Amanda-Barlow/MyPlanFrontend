@@ -1,7 +1,7 @@
 
 body {
   background-color: #dde5b6;
-  background-image: url('../public/assets/dmytro-tolokonov-Jq3WI9IQgEs-unsplash.jpg');
+  background-image: url('/public/assets/dmytro-tolokonov-Jq3WI9IQgEs-unsplash.jpg');
   overflow: scroll;
   background-size: inherit;
   background-position: y;

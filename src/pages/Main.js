@@ -1,35 +1,35 @@
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import Index from "./Index";
-import Show from './Show';
+import Index from "../pages/Index";
+import Show from '../pages/Show';
 
 
 const Main = (props) => { 
        
-  const [plans, setPlans] = useState(null)
-  const URL = 'https://my-plan-backend.herokuapp.com/'
+  const [plan, setPlan] = useState(null)
+  const URL = 'http://localhost:4000/plan/'
   
   //fetches all plans from our API backend
-  const getPlans = async () => {
+  const getPlan = async () => {
   const response = await fetch(URL)
   const data = await response.json()
-  setPlans(data.data)
+  setPlan(data.data)
 }
 
-const createPlans = async (plans) => {
+const createPlan = async (plan) => {
   //make post request to create plans
   await fetch(URL, {
-      method: "POST",
+      method: "post",
       headers: {
           "Content-Type": "application/json"
       },
-      body: JSON.stringify(plans),
+      body: JSON.stringify(plan),
   })
-  // update our components list of people
-  getPlans()
+  // update our components list of plans
+  getPlan();
 }
 
-const updatePlans = async (plan, id) => {
+const updatePlan = async (plan, id) => {
   // make post request to create people
   await fetch(URL + id, {
     method: "PUT",
@@ -39,32 +39,26 @@ const updatePlans = async (plan, id) => {
     body: JSON.stringify(plan),
   });
   // update list of people
-  getPlans();
+  getPlan();
 };
 
-const deletePlans = async (id) => {
+const deletePlan = async (id) => {
   // make post request to create people
   await fetch(URL + id, {
       method: "DELETE",
   });
   // update list of people
-  getPlans();
+  getPlan();
 };
 
 useEffect(() => {
-    getPlans()
+    getPlan()
 }, []);
   return(
       <main>
       <Routes>
-          <Route path="/" element={<Index 
-              plans={plans} 
-              createPlans={createPlans}/>}/>
-          <Route path="/plans/:id" element={<Show 
-              plans={plans} 
-              updatePlans={updatePlans} 
-              deletePlans={deletePlans}
-          />}/>
+          <Route path="/" element={<Index plan={plan} createPlan={createPlan}/>}/>
+          <Route path="/plan/:id" element={<Show plan={plan} updatePlan={updatePlan} deletePlan={deletePlan}/>}/>
       </Routes>
   </main>
 )

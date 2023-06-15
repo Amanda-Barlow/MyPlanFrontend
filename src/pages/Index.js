@@ -1,14 +1,13 @@
-import React from 'react';
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import FillablePlan from '../components/FillablePlan'   
+import Login from '../components/Login'   
 
 import GAD7 from '../components/GAD7'
 import PHQ9 from '../components/PHQ9'
 import SafetyPlan from '../components/SafetyPlan'
 import SkillsCheck from '../components/SkillsCheck'
 
-function Index(props) {
+const Index=(props)=> {
     // state to hold planData
     const [newForm, setNewForm] = useState({
         name: "",
@@ -33,9 +32,9 @@ function Index(props) {
     
       // loaded function
       const loaded = () => {
-        return props.plans.map((plan) => (
+        return props.plan.map((plan) => (
           <div key={plan._id} className="plan">
-            <Link to={`/plans/${plan._id}`}>
+            <Link to={`/plan/${plan._id}`}>
               <h1>{plan.name}</h1>
             </Link>
             <h3>{plan.title}</h3>
@@ -43,19 +42,19 @@ function Index(props) {
         ));
       };
     
-      const loading = () => {
-        return <h1>Loading...</h1>;
-      };
+    // data isnt loaded
+    const loading = () => {
+      console.log("in loading")
+      return <h1>Loading...</h1>
+  }
+
       return (
         <section>
-          <form onSubmit={handleSubmit}>
-                <FillablePlan />
-                <SkillsCheck />
-                <PHQ9 />  
-                <GAD7 /> 
-                <SafetyPlan />
-            <input type="submit" value="Create Plan" />
-          </form> </section>
+          <Login />
+          <input type="submit" value="Create Person" />
+       
+        {props.people ? loaded() : loading()}
+      </section>
       );
     }
     

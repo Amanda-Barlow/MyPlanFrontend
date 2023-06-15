@@ -11,4 +11,5 @@ In development: Given more time, development team would like to add: 1. User aut
 
 User Stories: As a clientUser, I want to be able to sign into my unique treatment plan application As a clientUser, I want to ensure that no unauthorized users can access my treatment plan application As a clientUser, I want to understand the purpose of the application As a clientUser, I want to be able to understand each question I am asked to answer As a clientUser, I want to be able to smoothly enter my answers As a clientUser, I want to be able to store my responses in the database As a clientUser, I want to be able to share my information with my clinical team As a clientUser, I want to be able to track my progress (stretch goal) As a clientUser, I want to be able to see a graph of my progress(stretch goal)
 
-Wireframes public/assets/wireframe1.png public/assets/wireframe2.png public/assets/wireframe3.png public/assets/wireframe4.png public/assets/wireframe5.png public/assets/wireframe6.png public/assets/wireframe7.png
+Wireframes 
+See Assets folder
