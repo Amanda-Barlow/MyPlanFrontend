@@ -8,7 +8,7 @@ const NavBar = (props) => {
             <Link to='/'><button>Home</button></Link>
             <Link to='/FormsPage'><button>Assessments</button></Link>
             <Link to='/About'><button>About Me</button></Link>
-            <Link to='/Results'><button>Results</button></Link>
+            <Link to='/Show'><button>Results</button></Link>
         </nav>
     );
 };
