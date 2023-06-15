@@ -6,7 +6,7 @@ import { useSignIn } from 'react-auth-kit';
 function Login () {
     const [error, setError] = useState('');
     const signIn = useSignIn();
-    const BASE_URL= "";
+    const BASE_URL= "http://localhost:4000/plan";
     const formik = useFormik({
       initialValues:{
         email: '',
