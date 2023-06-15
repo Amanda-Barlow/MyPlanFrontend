@@ -4,7 +4,7 @@ import React from 'react';
 const SkillsCheck = (props) => {
     return(
         <div>
-        <label for = "skills">What Skills Do You Want To Learn In Counseling?</label>
+        <label htmlFor = "skills">What Skills Do You Want To Learn In Counseling?</label>
             <select name= "skills" id="skills">
                 <option value="anxiety">Anxiety Management</option> 
                 <option value="emotionReg">Emotion Regulation</option> 
