@@ -1,11 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Login from '../components/Login'   
-
-import GAD7 from '../components/GAD7'
-import PHQ9 from '../components/PHQ9'
-import SafetyPlan from '../components/SafetyPlan'
-import SkillsCheck from '../components/SkillsCheck'
+import FillablePlan from '../components/FillablePlan'   
 
 const Index=(props)=> {
     // state to hold planData
@@ -50,7 +45,7 @@ const Index=(props)=> {
 
       return (
         <section>
-          <Login />
+          <FillablePlan />
           <input type="submit" value="Create Person" />
        
         {props.people ? loaded() : loading()}

@@ -6,14 +6,13 @@ import SafetyPlan from '../components/SafetyPlan'
 import SkillsCheck from '../components/SkillsCheck'
 
 
-const Plans = (props) => {
+const Plan = (props) => {
     const handleSubmit = (event) => {
         event.preventDefault();
     }
 
     return (
         <form id='myplan' onSubmit={handleSubmit} action='action.php' method='POST' target='formresponse'>
-
             <form id='myplan' action='action.php' method='POST' target='formresponse'></form>
             <FillablePlan />
             <SkillsCheck />
