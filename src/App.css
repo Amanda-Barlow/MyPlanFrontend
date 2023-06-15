@@ -45,7 +45,7 @@ h1 {
 }
 
 
-.aboutMe .HomePage {
+.aboutMe .Index {
   background-color: #f0ead2;
   font-family:'Times New Roman', Times, serif;
   margin: 0 auto;   
@@ -57,7 +57,7 @@ h1 {
   }
 
 
-.fillableForm {
+.fillablePlan {
   background-color: #f0ead2;
   margin: 2px;
   font-size: 20px;
@@ -110,28 +110,9 @@ h4 {
   font-weight: bold;
 }
 
-.Slider, GAD7 {
+.Slider, .GAD7 {
   font-size: 16px;
   font-size: 20px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
-}
-
-
-.SignInDiv {
-  max-width: 40%;
-  max-height: 50%;
-  background-color: #f0ead2;
-  border-radius: .5rem;
-  margin: 2em;
-  padding: 1px;
-}
-
-.SignUpDiv {
-  max-width: 80%;
-  max-height: 50%;
-  background-color: #f0ead2;
-  border-radius: .5rem;
-  margin: 2em;
-  padding: 1px;
 }

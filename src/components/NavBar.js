@@ -6,7 +6,7 @@ const NavBar = (props) => {
         <nav className = 'nav'>
             <h1>Your Treatment, Your Plan!</h1>
             <Link to='/'><button>Home</button></Link>
-            <Link to='/FormsPage'><button>Assessments</button></Link>
+            <Link to='/PlansPage'><button>Assessments</button></Link>
             <Link to='/About'><button>About Me</button></Link>
             <Link to='/Show'><button>Results</button></Link>
         </nav>
