@@ -1,49 +1,15 @@
-
-import NavBar from './components/NavBar';
-import About from './pages/About';
-import FormsPage from './pages/FormsPage';
-import Home from './pages/Home';
-import Results from './pages/Results';
 import './App.css';
+import NavBar from './components/NavBar';
+import Main from './components/Main';
 
-
-import { Route, Routes } from "react-router-dom";
-import { useState, useEffect } from 'react';
-
-
-const App = () => {
-    const URL = process.env.REACT_APP_BASE_URL
-    const [forms, setForms] = useState([]);
-    const [form, setForm] = useState(null);
-    console.log(URL, form, forms, setForm,)
     
-    const fetchForms = async () => {
-        try{
-            const response = await fetch(URL);
-            const data = await response.json();
-            setForms(data.data);
-        } catch (error) {
-            console.log(error);
-        }
-    };
-
-useEffect(() => {
-    setForms();
-}, []);
-
+function App() {
     return (
-        
-        <div className = 'App'>
-                <NavBar url={URL}/>
-                    <Routes>
-                        <Route path='/' element={<Home />} />
-                        <Route path='About' element={<About />} />
-                        <Route path='FormsPage' element={<FormsPage />} />
-                        <Route path='Results' element={<Results />} />
-                    </Routes>
-        </div>
-         
+      <div className="App">
+        <NavBar />
+        <Main />
+      </div>
     );
-}
-
-export default App;
+  }
+  
+  export default App;

@@ -1,22 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './App.css';
-import Home from './pages/Home';
+import './App.js'
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter, BrowserRouter as Router} from 'react-router-dom';
-import { AuthProvider } from 'react-auth-kit'
-
-
-
-<Router></Router>
+import { BrowserRouter as Router} from 'react-router-dom';
+// import { AuthProvider } from 'react-auth-kit'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <AuthProvider>
-    <BrowserRouter>
-                <Home />
-    </BrowserRouter>
-    </AuthProvider >
+    <Router>
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+    </Router>
 );
 
 reportWebVitals();
+
