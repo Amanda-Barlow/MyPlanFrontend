@@ -4,53 +4,54 @@ const SkillsCheck = (props) => {
     return(
 <fieldset>
 <legend for = "skills"><h2>What Skills Do You Want To Learn:</h2></legend>
+
 <div>
-<input type="checkbox" id="anxiety" name="anxiety" checked />
+<input type="checkbox" checked={isChecked} onChange={() => (!isChecked)} id="anxiety" name="anxiety" />
 <label for="anxiety">Anxiety Management</label>
 </div>
 
 <div>
-<input type="checkbox" id="emotionReg" name="emotionReg"/>
+<input type="checkbox" checked={isChecked} onChange={() => (!isChecked)} id="emotionReg" name="emotionReg"/>
 <label for="emotionReg">Emotion Regulation</label>
 </div>
 
 <div>
-<input type="checkbox" id="distressTol" name="distressTol"/>
+<input type="checkbox" checked={isChecked} onChange={() => (!isChecked)} id="distressTol" name="distressTol"/>
 <label for="distressTol">Distress Tolerance</label>
 </div>
 
 <div>
-<input type="checkbox" id="mindfulnees" name="mindfulnees"/>
+<input type="checkbox" checked={isChecked} onChange={() => (!isChecked)} id="mindfulnees" name="mindfulnees"/>
 <label for="mindfulnees">Mindfulnees</label>
 </div>
 
 <div>
-<input type="checkbox" id="interpersonalEff" name="interpersonalEff"/>
+<input type="checkbox" checked={isChecked} onChange={() => (!isChecked)} id="interpersonalEff" name="interpersonalEff"/>
 <label for="interpersonalEff">Interpersonal Effectiveness</label>
 </div>
 
 <div>
-<input type="checkbox" id="boundaries" name="boundaries"/>
+<input type="checkbox" checked={isChecked} onChange={() => (!isChecked)} id="boundaries" name="boundaries"/>
 <label for="boundaries">Healthy Boundaries</label>
 </div>
 
 <div>
-<input type="checkbox" id="organization" name="organization"/>
+<input type="checkbox" checked={isChecked} onChange={() => (!isChecked)} id="organization" name="organization"/>
 <label for="organization">Organization/Time Management</label>
 </div>
 
 <div>
-<input type="checkbox" id="depression" name="depression"/>
+<input type="checkbox" checked={isChecked} onChange={() => (!isChecked)} id="depression" name="depression"/>
 <label for="depression">Depression Management</label>
 </div>
 
 <div>
-<input type="checkbox" id="grounding" name="grounding"/>
+<input type="checkbox" checked={isChecked} onChange={() => (!isChecked)} id="grounding" name="grounding"/>
 <label for="grounding">Grounding Skills for EMDR</label>
 </div>
 
 <div>
-<input type="checkbox" id="substance" name="substance"/>
+<input type="checkbox" checked={isChecked} onChange={() => (!isChecked)} id="substance" name="substance"/>
 <label for="substance">Substance Use Recovery</label>
 </div>
 <br></br>
