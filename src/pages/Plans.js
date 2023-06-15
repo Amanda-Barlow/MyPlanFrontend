@@ -6,10 +6,9 @@ import SafetyPlan from '../components/SafetyPlan'
 import SkillsCheck from '../components/SkillsCheck'
 
 
-const PlansPage = (props) => {
+const Plans = (props) => {
     const handleSubmit = (event) => {
         event.preventDefault();
-        // handle form submission here, e.g., send form data to the server
     }
 
     return (
@@ -27,4 +26,4 @@ const PlansPage = (props) => {
     )
 }
 
-export default PlansPage;
+export default Plans;

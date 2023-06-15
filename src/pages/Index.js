@@ -1,7 +1,8 @@
+import React from 'react';
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import FillablePlan from '../components/FillablePlan'   
-import React from 'react';
+
 import GAD7 from '../components/GAD7'
 import PHQ9 from '../components/PHQ9'
 import SafetyPlan from '../components/SafetyPlan'
@@ -15,9 +16,10 @@ function Index(props) {
       });
     
       // handleChange function for form
-      const handleChange = (event) => {
-        setNewForm({ ...newForm, [event.target.name]: event.target.value });
-      };
+    function handleChange(event){
+        setNewForm({...newForm, [event.target.name]: event.target.value})
+        return newForm;
+    }
     
       // handle submit function for form
       const handleSubmit = (event) => {
@@ -53,9 +55,7 @@ function Index(props) {
                 <GAD7 /> 
                 <SafetyPlan />
             <input type="submit" value="Create Plan" />
-          </form>
-          {props.plans ? loaded() : loading()}
-        </section>
+          </form> </section>
       );
     }
     

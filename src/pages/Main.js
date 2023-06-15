@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import Index from "../pages/Index";
-import Show from '../pages/Show';
+import Index from "./Index";
+import Show from './Show';
+
 
 const Main = (props) => { 
        
@@ -10,8 +11,8 @@ const Main = (props) => {
   
   //fetches all plans from our API backend
   const getPlans = async () => {
-  const reponse = await fetch(URL)
-  const data = await reponse.json()
+  const response = await fetch(URL)
+  const data = await response.json()
   setPlans(data.data)
 }
 
