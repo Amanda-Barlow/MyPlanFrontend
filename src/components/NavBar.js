@@ -1,18 +1,34 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react';
+import NavBar from './NavBar';
+import About from '../pages/About';
+import Home from '../pages/Home';
+import Plan from '../pages/Plan';
+import Show from '../pages/Show';
 
+const App = () => {
+  const [currentPage, setCurrentPage] = useState('home');
 
-const NavBar = (props) => {
+  const renderPage = () => {
+    switch (currentPage) {
+      case 'home':
+        return <Home />;
+      case 'login':
+        return <Plan />;
+      case 'about':
+        return <About />;
+      case 'show':
+        return <Show />;
+      default:
+        return null;
+    }
+  };
 
-    return(
-        <div className='nav'>
-            <h1>Your Treatment, Your Plan</h1>
-            <Link to="/"><button>HOME</button></Link>
-            <Link to="/Login"><button>MY PLAN</button></Link>
-            <Link to="/private"><button>RESULTS</button></Link>
-            <Link to="/About"><button>ABOUT</button></Link>
-        </div>
-    )
-}
+  return (
+    <div>
+      <NavBar navigate={setCurrentPage} />
+      {renderPage()}
+    </div>
+  );
+};
 
-export default NavBar;
+export default App;
