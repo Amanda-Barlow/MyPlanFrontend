@@ -5,6 +5,7 @@ import './index.css';
 import './App.css';
 import App from './App.js'
 
+
 import reportWebVitals from './reportWebVitals';
 // import { AuthProvider } from 'react-auth-kit'
 
@@ -13,6 +14,7 @@ root.render(
     <Router>
     <React.StrictMode>
         <App /> 
+        
     </React.StrictMode>
     </Router>  
 );

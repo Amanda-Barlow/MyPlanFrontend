@@ -19,7 +19,7 @@ const Plan = (props) => {
             <PHQ9 />  
             <GAD7 /> 
             <SafetyPlan />
-            <input type='submit' value='Submit' onClick='return PlansPage();'/>
+            <input type="submit" value="Create Plan" onClick={handleSubmit}/>
         </form>
 
     )
