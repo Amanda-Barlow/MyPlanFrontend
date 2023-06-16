@@ -8,7 +8,7 @@ function Login(props) {
   const [error, setError] = useState('');
   const navigate = useNavigate();
   const signIn = useSignIn();
-  const BASE_URL = "http://localhost:4000/api/plan";
+  const BASE_URL = "http://localhost:4000/plan";
   const formik = useFormik({
     initialValues: {
       email: '',

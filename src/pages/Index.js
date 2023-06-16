@@ -58,7 +58,7 @@ const Index = (props) => {
           name="password"
           value={newForm.password}
           onChange={handleChange}
-          placeholder="Enter Passwrod"
+          placeholder="Enter Password"
         />
         <input type="submit" value="Create Plan" />
       </form>

@@ -6,7 +6,7 @@ import SafetyPlan from '../components/SafetyPlan'
 import SkillsCheck from '../components/SkillsCheck'
 
 
-const Plan = (props) => {
+const Plan = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
     }
