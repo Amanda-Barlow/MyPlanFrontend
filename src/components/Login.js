@@ -4,11 +4,11 @@ import { useSignIn } from 'react-auth-kit';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-function Login() {
+function Login(props) {
   const [error, setError] = useState('');
   const navigate = useNavigate();
   const signIn = useSignIn();
-  const BASE_URL = "http://localhost:4000/plan";
+  const BASE_URL = "http://localhost:4000/api/plan";
   const formik = useFormik({
     initialValues: {
       email: '',
@@ -17,6 +17,7 @@ function Login() {
     onSubmit: async (values) => {
       console.log('Values: ', values);
       setError('');
+
       try {
         const response = await axios.post(BASE_URL, values);
         signIn({
@@ -36,11 +37,12 @@ function Login() {
   });
 
   return (
-    
-      <div className='SignInDiv'>
-        <h2>Sign In To Your Account</h2>
+      <div>
+        <h1>Sign In To Your Account</h1>
+        {error && <p>{error}</p>}
         <form onSubmit={formik.handleSubmit}>
-          <div className='SignInDiv'>
+          <div>
+            <form>
             <label>Email: </label>
             <input
               placeholder='Enter Email Address'
@@ -60,6 +62,7 @@ function Login() {
             <button size='large' kind='primary' type='submit' disabled={formik.isSubmitting}>Sign In</button>
             <br></br>
             <button size='large' kind='primary' type='submit' disabled={formik.isSubmitting}>Register</button>
+            </form>
           </div>
         </form>
       </div>

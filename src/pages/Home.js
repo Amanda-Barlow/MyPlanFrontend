@@ -58,7 +58,7 @@ useEffect(() => {
       <main>
       <Routes>
           <Route path="/" element={<Index plan={plan} createPlan={createPlan}/>}/>
-          <Route path="/plan/:id" element={<Show plan={plan} updatePlan={updatePlan} deletePlan={deletePlan}/>}/>
+          <Route path="/plan/:id" element={<Show plan={ plan } updatePlan={updatePlan} deletePlan={deletePlan}/>}/>
       </Routes>
   </main>
 )

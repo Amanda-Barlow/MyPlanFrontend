@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Plan from '../pages/Plan';
+
 
 const Index = (props) => {
   // state to hold planData
   const [newForm, setNewForm] = useState({
-    name: "",
-    title: "",
+    email: "",
+    password: "",
   });
 
   // handleChange function for form
@@ -19,8 +19,8 @@ const Index = (props) => {
     event.preventDefault();
     props.createPlan(newForm);
     setNewForm({
-      name: "",
-      title: "",
+      email: "",
+      password: "",
     });
   };
 
@@ -29,9 +29,9 @@ const Index = (props) => {
     return props.plan.map((plan) => (
       <div key={plan._id} className="plan">
         <Link to={`/plan/${plan._id}`}>
-          <h1>{plan.name}</h1>
+          <h1>{plan.email}</h1>
         </Link>
-        <h3>{plan.title}</h3>
+        <h3>{plan.password}</h3>
       </div>
     ));
   };
@@ -44,21 +44,21 @@ const Index = (props) => {
 
   return (
     <section>
-      <Plan/>
+      
       <form onSubmit={handleSubmit}>
         <input
-          type="text"
-          name="name"
-          value={newForm.name}
+          type="email"
+          name="email"
+          value={newForm.email}
           onChange={handleChange}
-          placeholder="Enter Name"
+          placeholder="Enter Your Email"
         />
         <input
-          type="text"
-          name="title"
-          value={newForm.title}
+          type="password"
+          name="password"
+          value={newForm.password}
           onChange={handleChange}
-          placeholder="Enter Title"
+          placeholder="Enter Passwrod"
         />
         <input type="submit" value="Create Plan" />
       </form>

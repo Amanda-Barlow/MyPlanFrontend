@@ -1,18 +1,13 @@
 
 import React from 'react'
 import './App.css';
-import NavBar from './components/NavBar'
-import Login from './components/Login'
-import { AuthProvider } from 'react-auth-kit';
+import Home from './pages/Home'
 
 function App() {
     return (
-      <AuthProvider>
       <div className="App">
-        <NavBar />
-        <Login />
+        <Home />
       </div>
-      </AuthProvider>
     );
   }
   
