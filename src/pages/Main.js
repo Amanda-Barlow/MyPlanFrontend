@@ -7,7 +7,7 @@ import Show from '../pages/Show';
 const Main = (props) => { 
        
   const [plan, setPlan] = useState(null)
-  const URL = 'http://localhost:3000/plan'
+  const URL = 'http://localhost:4000/plan'
   
   //fetches all plans from our API backend
   const getPlan = async () => {
