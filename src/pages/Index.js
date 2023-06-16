@@ -18,7 +18,7 @@ const Index=(props)=> {
       // handle submit function for form
       const handleSubmit = (event) => {
         event.preventDefault();
-        props.createPlans(newForm);
+        props.createPlan(newForm);
         setNewForm({
           name: "",
           title: "",
@@ -46,9 +46,9 @@ const Index=(props)=> {
       return (
         <section>
           <FillablePlan />
-          <input type="submit" value="Create Person" />
+          <input type="submit" value="Create Plan" onClick={handleSubmit}/>
        
-        {props.people ? loaded() : loading()}
+        {props.plan ? loaded() : loading()}
       </section>
       );
     }
